@@ -1,0 +1,1 @@
+This is the first project about high level programming in Holberton School Cali, 2nd trimester
