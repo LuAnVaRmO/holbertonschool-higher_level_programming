@@ -4,8 +4,7 @@ if __name__ == "__main__":
     if len(sys.argv) - 1 > 0:
         sum = 0
         for n in range(1, (len(sys.argv))):
-            num = int(sys.argv[n])
-            sum = num + sum
+            sum += int(sys.argv[n])
         print(("{:d}".format(sum)))
     else:
         print("0")
