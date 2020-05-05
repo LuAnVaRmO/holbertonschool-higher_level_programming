@@ -1,0 +1,1 @@
+This project is about lists and data structures with python, for Holberton School CO
