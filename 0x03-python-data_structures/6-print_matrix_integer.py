@@ -2,11 +2,13 @@
 def print_matrix_integer(matrix=[[]]):
     if matrix != [[]]:
         for i in matrix:
+            count = 1
             for j in i:
-                if j % len(i) == 0:
+                if count == len(i):
                     print("{:d}".format(j), end='')
                 else:
                     print("{:d}".format(j), end=' ')
+                count += 1
             print(end="\n")
     else:
         print(end="\n")
