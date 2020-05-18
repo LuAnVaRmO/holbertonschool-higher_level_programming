@@ -2,10 +2,10 @@
 
 This project is about the exceptions in python
 
-####Learning Objectives
+## Learning Objectives
 
-At the end of this project, you are expected to be able to explain to anyone, without the help of Google:
-General
+#### At the end of this project, you are expected to be able to explain to anyone, without the help of Google:
+##### General
 
 * Why Python programming is awesome (don’t forget to tweet today, with the hashtag #pythoniscool :))
 * What’s the difference between errors and exceptions
@@ -16,8 +16,7 @@ General
 * How to raise a builtin exception
 * When do we need to implement a clean-up action after an exception
 
-Requirements
-General
+##### Requirements General
 
 * Allowed editors: vi, vim, emacs
 * All your files will be interpreted/compiled on Ubuntu 14.04 LTS using python3 (version 3.4.3)
