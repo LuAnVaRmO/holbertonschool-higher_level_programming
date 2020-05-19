@@ -1,3 +1,7 @@
 #!/usr/bin/python3
-class Square:
+""" This module creates a new class Square"""
+
+
+class Square():
+    """ Empty  class """
     pass

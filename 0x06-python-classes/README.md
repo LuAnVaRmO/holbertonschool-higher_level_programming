@@ -106,7 +106,7 @@ The size of a square is crucial for a square, many things depend of it (area com
         guillaume@ubuntu:~/0x06$ 
 
 
-#####  2. Size validation
+####  2. Size validation
 
 Write a class Square that defines a square by: (based on 1-square.py)
 
