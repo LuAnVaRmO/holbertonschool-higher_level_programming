@@ -41,7 +41,6 @@ class Square:
         """ Return the position """
         return self.__position
 
-
     @position.setter
     def position(self, position):
         """ set the position of the tuple """
@@ -57,11 +56,9 @@ class Square:
         """ Function return the square painted with # """
         if self.__size == 0:
             print()
-        if self.__position[0] > self.__position[1]:
+        else:
+            print("\n" * self.__position[1], end="")
             for i in range(self.__size):
-                print(" " * self.__position[0], end="")
-                print("#" * self.__size)
-        if self.__position[0] <= self.__position[1]:
-            for i in range(self.__size):
-                print(" " * self.__position[1], end="")
-                print("#" * self.__size)
+                if self.__position[0] > 0:
+                    print(" " * self.__position[0], end="")
+                    print("#" * self.__size)
