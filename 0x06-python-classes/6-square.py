@@ -36,9 +36,11 @@ class Square:
 
     @property
     def position(self):
-        """ Return the position """
+        """ Function to show the position """
 
+        """ Return the position """
         return self.__position
+
 
     @position.setter
     def position(self, position):
@@ -53,14 +55,13 @@ class Square:
         """ Print a square with # """
 
         """ Function return the square painted with # """
-        if self.size == 0:
+        if self.__size == 0:
             print()
-        for i in range(self.__position[1]):
-            print()
-        for i in range(self.__size):
-            for j in range(self.__size + self.__position[0]):
-                if j < self.__position[0]:
-                    print(' ', end='')
-                else:
-                    print('#', end='')
-            print()
+        if self.__position[0] > self.__position[1]:
+            for i in range(self.__size):
+                print(" " * self.__position[0], end="")
+                print("#" * self.__size)
+        if self.__position[0] <= self.__position[1]:
+            for i in range(self.__size):
+                print(" " * self.__position[1], end="")
+                print("#" * self.__size)
