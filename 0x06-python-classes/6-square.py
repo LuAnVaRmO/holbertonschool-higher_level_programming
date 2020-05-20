@@ -57,12 +57,13 @@ class Square:
         """ Function return the square painted with # """
         if self.__size == 0:
             print()
-        elif self.__position[1]:
-            print("\n" * self.__position[1], end="")
-            for i in range(self.__size):
-                if self.__position[0] > 0:
-                    print(" " * self.__position[0], end="")
-                    print("#" * self.__size)
-        else:
-            for i in range(self.size):
-                print("#" * self.size)
+            for i in range(self.__position[1]):
+                print()
+
+        for i in range(self.__size):
+            for j in range(self.__size + self.__position[0]):
+                if j < self.__position[0]:
+                    print(' ', end='')
+                else:
+                    print('#', end='')
+            print()
