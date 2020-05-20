@@ -8,7 +8,9 @@ class Square:
     def __init__(self, size=0, position=(0, 0)):
         """ Verifying type of value, size and position"""
 
-        self.__size = size
+        self.size = size
+        if position[0] < 0 or position[1] < 0:
+            raise TypeError("position must be a tuple of 2 positive integers")
         self.__position = position
 
     def area(self):
@@ -42,14 +44,15 @@ class Square:
         return self.__position
 
     @position.setter
-    def position(self, position):
+    def position(self, value):
         """ set the position of the tuple """
 
-        if type(position) is not int or len(position) != 2 or \
-                type(position[0]) is not int or type(position[1]) is not int\
-                or position[0] < 0 or position[1] < 0:
+        if isinstance(value, int) or len(value) != 2 or \
+                isinstance(value[0], int) or isinstance(value[1], int) \
+                or value[0] < 0 or value[1] < 0:
             raise TypeError("position must be a tuple of 2 positive integers")
-        self.__position = position
+        else:
+            self.position = value
 
     def my_print(self):
         """ Print a square with # """
