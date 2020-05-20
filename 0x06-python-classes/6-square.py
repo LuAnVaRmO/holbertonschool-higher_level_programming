@@ -9,18 +9,10 @@ class Square:
         """ Verifying type of value, size and position"""
 
         self.size = size
-        if position[0] < 0 or position[1] < 0:
-            raise TypeError("position must be a tuple of 2 positive integers")
         try:
-            self.__position = position
+            self.position = position
         except TypeError as err:
             print(err)
-
-    def area(self):
-        """ Function area(size) """
-
-        """ Function return size * size """
-        return self.__size * self.__size
 
     @property
     def size(self):
@@ -48,19 +40,22 @@ class Square:
 
     @position.setter
     def position(self, value):
-        """ set the position of the tuple """
-
-        if isinstance(value, int) or len(value) != 2 or \
-                isinstance(value[0], int) or isinstance(value[1], int) \
-                or value[0] < 0 or value[1] < 0:
+        if (not isinstance(value, tuple) or len(value) != 2 or
+                not isinstance(value[0], int) or not isinstance(value[1], int) or
+                value[0] < 0 or value[1] < 0):
             raise TypeError("position must be a tuple of 2 positive integers")
         else:
-            self.position = value
+            self.__position = value
+
+    def area(self):
+        """ Function area(size) """
+
+        """ Function return size * size """
+        return self.__size * self.__size
 
     def my_print(self):
         """ Print a square with # """
 
-        """ Function return the square painted with # """
         if self.__size == 0:
             print()
 
