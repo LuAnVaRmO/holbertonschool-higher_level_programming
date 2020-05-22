@@ -347,10 +347,10 @@ In this task, you will write unittests for the function def max_integer(list=[])
 
 ##
 ##
-Repo:
+##### Repo:
 
-GitHub repository: holbertonschool-higher_level_programming
-Directory: 0x07-python-test_driven_development
+- GitHub repository: holbertonschool-higher_level_programming
+- Directory: 0x07-python-test_driven_development
 
 ##
 ##
