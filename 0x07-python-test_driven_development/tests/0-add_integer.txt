@@ -1,4 +1,9 @@
-''' Testing if the output is correct '''
+==========================
+The ''add_integer'' module
+==========================
+
+'''' Testing if the output is correct '''
+
 >>> add_integer = __import__('0-add_integer').add_integer
 
 >>> add_integer(1, 2)
