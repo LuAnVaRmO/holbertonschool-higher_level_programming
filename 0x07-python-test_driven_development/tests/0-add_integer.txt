@@ -15,6 +15,14 @@ The ''add_integer'' module
 >>> add_integer(2)
 100
 
+>>> add_integer(34.5)
+132
+
+>>> add_integer(24, float("NaN"))
+Traceback (most recent call last):
+...
+ValueError: cannot convert float NaN to integer
+
 >>> add_integer(-2, 5j)
 Traceback (most recent call last):
 ...
