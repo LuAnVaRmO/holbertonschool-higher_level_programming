@@ -2,7 +2,7 @@
 """
 matrix_divided
 This function divide by <div> a <matrix> of integers
-return <matrix> / <div>
+return <matrix> / <div>0
 """
 
 
