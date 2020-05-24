@@ -1,0 +1,45 @@
+=================================
+The ''5-text_indentation'' Module
+=================================
+
+''' Testing if the output is correct '''
+
+>>> text_indentation = __import__('5-text_indentation').text_indentation
+
+
+>>> text_indentation("""My name is Luis Angel: I am Student at Holberton School? yes, and this is a proof. ready. OK""")
+My name is Luis Angel:
+<BLANKLINE>
+I am Student at Holberton School?
+<BLANKLINE>
+yes, and this is a proof.
+<BLANKLINE>
+ready.
+<BLANKLINE>
+OK
+
+>>> text_indentation(2)
+Traceback (most recent call last):
+...
+TypeError: text must be a string
+
+>>> text_indentation([2, 3])
+Traceback (most recent call last):
+...
+TypeError: text must be a string
+
+>>> text_indentation("Holberton School")
+Holberton School
+
+>>> text_indentation("Holberton.School")
+Holberton.
+<BLANKLINE>
+School
+
+>>> text_indentation("")
+
+
+>>> text_indentation()
+Traceback (most recent call last):
+...
+TypeError: text_indentation() missing 1 required positional argument: 'text'
