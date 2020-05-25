@@ -44,12 +44,10 @@ class Rectangle:
             raise ValueError("width must be >= 0")
         self.__width = value
 
-    @property
     def area(self):
         """ return area of the rectangle """
         return self.__width * self.__height
 
-    @property
     def perimeter(self):
         if self.__height == 0 or self.__width == 0:
             per = 0
@@ -57,4 +55,13 @@ class Rectangle:
             per = 2 * (self.__width + self.__height)
         return per
 
-    def
+    def __str__(self):
+        """ Print te rectangle with # sign """
+        if self.width == 0 or self.height == 0:
+            return ""
+        text = ""
+        for i in range(self.__height):
+            text += "#" * self.width
+            text += '\n'
+        text = text[:-1]
+        return text
