@@ -4,7 +4,7 @@ Create Rectangle class
 """
 
 
-class Rectangle():
+class Rectangle:
     """
     :param: width: width of the rectangle
     :param: height: height of the rectangle
@@ -19,7 +19,7 @@ class Rectangle():
     @property
     def width(self):
         """ Getter function variable 'width' """
-        return self.width
+        return self.__width
 
     @width.setter
     def width(self, value):
@@ -33,7 +33,7 @@ class Rectangle():
     @property
     def height(self):
         """ Getter function variable 'height' """
-        return self.height
+        return self.__height
 
     @height.setter
     def height(self, value):
