@@ -8,5 +8,5 @@ def append_write(filename="", text=""):
     :param text: text to append
     :return: the total of new chars added
     """
-    with open(filename,"a") as f:
+    with open(filename, "a") as f:
         return f.write(text)
