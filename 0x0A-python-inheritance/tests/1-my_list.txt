@@ -34,7 +34,7 @@ The ''my_list'' module
 >>> my_list.print_sorted()
 [4, 8, 12, 20]
 >>> my_list.append(-4)
-my_list.print_sorted()
+>>> my_list.print_sorted()
 [-4, 4, 8, 12, 20]
 >>> print(my_list)
 [4, 8, 12, 20, -4]
@@ -49,7 +49,7 @@ my_list.print_sorted()
 >>> my_list.print_sorted()
 ['A', 'B', 'C']
 >>> print(my_list)
-["B", "A", "C"]
+['B', 'A', 'C']
 
 >>> my_list.clear()
 >>> my_list.append("A")
