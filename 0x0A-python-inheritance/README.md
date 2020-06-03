@@ -449,3 +449,6 @@ Write a function that adds a new attribute to an object if it’s possible:
 #### Repo:
 ##### GitHub repository: holbertonschool-higher_level_programming
 ##### Directory: 0x0A-python-inheritance
+#
+## Author ✒️
+* **Luis Angel Vargas Mosquera** - [LuAnVaRmO](https://github.com/LuAnVaRmO)
