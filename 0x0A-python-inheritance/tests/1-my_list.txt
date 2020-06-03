@@ -14,6 +14,8 @@ The ''my_list'' module
  >>> my_list.append(5)
  >>> my_list.print_sorted()
  [1, 2, 3, 4, 5]
+ >>> print(my_list)
+ [1, 4, 2, 3, 5]
 
 >>> my_list.clear()
 >>> my_list.append(9)
@@ -24,11 +26,30 @@ The ''my_list'' module
 >>> my_list.print_sorted()
 []
 
+>>> my_list.clear()
+>>> my_list.append(4)
+>>> my_list.append(8)
+>>> my_list.append(12)
+>>> my_list.append(20)
+>>> my_list.print_sorted()
+[4, 8, 12, 20]
+>>> my_list.append(-4)
+my_list.print_sorted()
+[-4, 4, 8, 12, 20]
+>>> print(my_list)
+[4, 8, 12, 20, -4]
+
+>>> my_list = MyList([])
+>>> my_list.print_sorted()
+[]
+
 >>> my_list.append("B")
 >>> my_list.append("A")
 >>> my_list.append("C")
 >>> my_list.print_sorted()
 ['A', 'B', 'C']
+>>> print(my_list)
+["B", "A", "C"]
 
 >>> my_list.clear()
 >>> my_list.append("A")
