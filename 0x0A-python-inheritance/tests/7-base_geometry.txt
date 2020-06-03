@@ -22,6 +22,11 @@ Traceback (most recent call last):
 ...
 TypeError: hello must be an integer
 
+>>> bg.integer_validator(None, "Betty")
+Traceback (most recent call last):
+...
+TypeError: None must be an integer
+
 >>> bg.integer_validator("jhon", "wick")
 Traceback (most recent call last):
 ...
