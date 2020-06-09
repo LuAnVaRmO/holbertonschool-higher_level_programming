@@ -209,3 +209,7 @@ class TestRectangle(unittest.TestCase):
         r1 = Rectangle(6, 7, 12, 10)
         r1.update(y=24)
         self.assertEqual(r1.y, 24)
+
+
+if __name__ == "__main__":
+    unittest.main()

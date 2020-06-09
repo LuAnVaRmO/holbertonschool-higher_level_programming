@@ -28,3 +28,7 @@ class TestBase(unittest.TestCase):
             Base(2, 'a')
         with self.assertRaises(TypeError):
             Base(1, 2)
+
+
+if __name__ == "__main__":
+    unittest.main()
