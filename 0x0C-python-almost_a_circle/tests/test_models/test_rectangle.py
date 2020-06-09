@@ -212,7 +212,7 @@ class TestRectangle(unittest.TestCase):
 
     def test_10_dictionary(self):
         """ Dictionary representation rectangle """
-        r1 = Rectangle(2,2,1,1,89)
+        r1 = Rectangle(2, 2, 1, 1, 89)
         r1_dic = {'width': 2, 'height': 2, 'x': 1, 'id': 89, 'y': 1}
         self.assertEqual(r1.to_dictionary(), r1_dic)
 
