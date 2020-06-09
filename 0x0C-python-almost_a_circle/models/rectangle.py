@@ -104,3 +104,14 @@ class Rectangle(Base):
             for key in kwargs:
                 if hasattr(self, key):
                     setattr(self, key, kwargs[key])
+
+    def to_dictionary(self):
+        """ Print dict representation of rectangle """
+        rec_dict = {
+            'id': self.id,
+            'width': self.width,
+            'height': self.height,
+            'x': self.x,
+            'y': self.y,
+        }
+        return rec_dict
