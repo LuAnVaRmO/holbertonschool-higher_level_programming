@@ -86,8 +86,13 @@ class Rectangle(Base):
 
     def __str__(self):
         """ Print format rectangle """
-        return "[{}] ({}) {}/{} - {}/{}".format(__class__.__name__,
-             self.id, self.x, self.y, self.width, self.height)
+        n = __class__.__name__
+        i = self.id
+        x = self.x
+        y = self.y
+        w = self.width
+        h = self.height
+        return "[{}] ({}) {}/{} - {}/{}".format(n, i, x, y, w, h)
 
     def update(self, *args, **kwargs):
         """ Update values of rectangle """

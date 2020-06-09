@@ -18,7 +18,7 @@ class TestBase(unittest.TestCase):
         self.assertEqual(Base((1, 2)).id, (1, 2))
         self.assertEqual(Base(()).id, ())
         self.assertEqual(Base({'1': '2', '3': '4'}).id, {'1': '2', '3': '4'})
-        self.assertEqual(Base('string' + ' concatenated').id, 'string concatenated')
+        self.assertEqual(Base('str' + ' concat').id, 'str concat')
         self.assertEqual(Base(True).id, True)
         self.assertEqual(Base(-98).id, -98)
 
