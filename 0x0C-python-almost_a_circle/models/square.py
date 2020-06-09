@@ -21,9 +21,19 @@ class Square(Rectangle):
 
     def __str__(self):
         """ Print formatted square """
-        n = __class__.__name__
         i = self.id
         x = self.x
         y = self.y
         s = self.width
-        return "[{}] ({}) {}/{} - {}".format(n, i, x, y, s)
+        return "[Square] ({:d}) {:d}/{:d} - {:d}".format(i, x, y, s)
+
+    def update(self, *args, **kwargs):
+        """ Update values of square """
+        ord_att = ["id", "size", "x", "y"]
+        if args and args != ():
+            for i in range(len(args)):
+                setattr(self, ord_att[i], args[i])
+        else:
+            for key in kwargs:
+                if hasattr(self, key):
+                    setattr(self, key, kwargs[key])
