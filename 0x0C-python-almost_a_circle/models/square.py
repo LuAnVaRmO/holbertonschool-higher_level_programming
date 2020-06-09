@@ -37,3 +37,13 @@ class Square(Rectangle):
             for key in kwargs:
                 if hasattr(self, key):
                     setattr(self, key, kwargs[key])
+
+    def to_dictionary(self):
+        """ Print dict representation of rectangle """
+        rec_dict = {
+            'id': self.id,
+            'size': self.width,
+            'x': self.x,
+            'y': self.y,
+        }
+        return rec_dict

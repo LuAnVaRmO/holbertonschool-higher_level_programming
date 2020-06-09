@@ -110,6 +110,12 @@ class TestRectangle(unittest.TestCase):
         r2 = Square(5, 2, 3, 1)
         self.assertEqual(r2.__str__(), "[Square] (1) 2/3 - 5")
 
+    def test_08_dictionary(self):
+        """ Dictionary representation rectangle """
+        r1 = Square(2, 2, 1, 89)
+        r1_dic = {'size': 2, 'x': 2, 'id': 89, 'y': 1}
+        self.assertEqual(r1.to_dictionary(), r1_dic)
+
 
 if __name__ == "__main__":
     unittest.main()
