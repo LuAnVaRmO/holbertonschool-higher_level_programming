@@ -7,7 +7,7 @@ from models.rectangle import Rectangle
 
 
 class TestRectangle(unittest.TestCase):
-    """ Test base task 2 """
+    """ Test rectangle class """
 
     def test_00_id(self):
         """ Correct Case id: full args """

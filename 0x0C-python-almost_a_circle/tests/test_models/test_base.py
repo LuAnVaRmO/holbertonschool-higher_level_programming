@@ -5,7 +5,7 @@ from models.base import Base
 
 
 class TestBase(unittest.TestCase):
-    """ Test base task 1 """
+    """ Test base class """
 
     def test_correct(self):
         """  correct answer """
