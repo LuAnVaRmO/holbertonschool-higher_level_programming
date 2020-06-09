@@ -6,7 +6,6 @@ from models.rectangle import Rectangle
 class Square(Rectangle):
     """ Class square """
     def __init__(self, size, x=0, y=0, id=None):
-        self.size = size
         super().__init__(size, size, x, y, id)
 
     @property
@@ -17,11 +16,11 @@ class Square(Rectangle):
     @size.setter
     def size(self, value):
         """ setter size """
-        self.height = value
         self.width = value
+        self.height = value
 
     def __str__(self):
-        """ Print format square """
+        """ Print formatted square """
         n = __class__.__name__
         i = self.id
         x = self.x
