@@ -20,7 +20,7 @@ if __name__ == '__main__':
         db=my_db)
 
     cursor = db.cursor()
-    dbase = cursor.execute("SELECT * FROM states WHERE name LIKE 'N%'")
+    dbase = cursor.execute("SELECT * FROM states WHERE name LIKE 'N%';")
     res = cursor.fetchall()
     for i in res:
         print(i)
