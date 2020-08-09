@@ -12,9 +12,11 @@ if __name__ == "__main__":
                            pool_pre_ping=True)
     Session = sessionmaker(engine)
     session = Session()
-    row = session.query(State).first()
-    if row:
-        print("{}: {}".format(row.id, row.name))
-    else:
+    instance = session.query(State).first()
+
+    if instance is None:
         print("Nothing")
+    else:
+        print("{}: {}".format(instance.id, instance.name))
+
     session.close()
