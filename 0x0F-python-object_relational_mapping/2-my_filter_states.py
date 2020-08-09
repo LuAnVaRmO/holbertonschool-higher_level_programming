@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" list where start letter is 'N' """
+""" list the 4th argument """
 
 
 from sys import argv
@@ -19,7 +19,8 @@ if __name__ == '__main__':
         db=my_db)
 
     cursor = db.cursor()
-    dbase = cursor.execute("SELECT * FROM states WHERE name LIKE BINARY '{}%' ORDER BY states.id".format(argv[4]))
+    dbase = cursor.execute("SELECT * FROM states WHERE name LIKE "
+                           "BINARY '{}%' ORDER BY states.id".format(argv[4]))
     res = cursor.fetchall()
     for i in res:
         print(i)
