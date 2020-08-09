@@ -1,6 +1,5 @@
 #!/usr/bin/python3
-""" script that lists all states
-    from the database hbtn_0e_0_usa."""
+""" list where start letter is 'N' """
 
 
 from sys import argv
@@ -20,7 +19,7 @@ if __name__ == '__main__':
         db=my_db)
 
     cursor = db.cursor()
-    dbase = cursor.execute("SELECT * FROM states WHERE name LIKE 'N%' ORDER BY states.id;")
+    dbase = cursor.execute("SELECT * FROM states WHERE name LIKE BINARY 'N%';")
     res = cursor.fetchall()
     for i in res:
         print(i)
