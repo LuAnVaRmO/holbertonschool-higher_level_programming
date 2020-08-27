@@ -1,7 +1,6 @@
 #!/usr/bin/python3
 """ Script that display error msg """
 import urllib.request
-import urllib.parse
 from sys import argv
 import urllib.error
 
