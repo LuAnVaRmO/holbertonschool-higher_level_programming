@@ -1,19 +1,21 @@
 #!/usr/bin/python3
 """ Script that return a json file"""
 
-import requests
-import sys
 
-if __name__ == '__main__':
+if __name__ == "__main__":
+    from requests import post
+    from sys import argv
 
-    letter = "" if len(sys.argv) == 1 else sys.argv[1]
-    payload = {"q": letter}
-    req = requests.post("http://0.0.0.0:5000/search_user", data=payload)
     try:
-        response = req.json()
-        if response == {}:
-            print("No result")
+        if len(argv) < 2:
+            letter = ""
         else:
-            print("[{}] {}".format(response.get("id"), response.get("name")))
+            letter = argv[1]
+        req = post('http://0.0.0.0:5000/search_user', data={'q': letter})
+        j = req.json()
+        if not j:
+            print('No result')
+        else:
+            print('[{}] {}'.format(j.get('id'), j.get('name')))
     except ValueError:
-        print("Not a valid JSON")
+        print('Not a valid JSON')
