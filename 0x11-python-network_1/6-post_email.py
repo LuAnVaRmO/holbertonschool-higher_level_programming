@@ -1,10 +1,13 @@
 #!/usr/bin/python3
+
 import requests
-from sys import argv
+import sys
 
 
 if __name__ == "__main__":
-    url = argv[1]
-    value = {'email': argv[2]}
-    r = requests.post(argv[1], data=value)
-    print(r.text)
+    url = sys.argv[1]
+    email = sys.argv[2]
+    val = {}
+    val['email'] = email
+    req = requests.post(url, val)
+    print(req.text)
