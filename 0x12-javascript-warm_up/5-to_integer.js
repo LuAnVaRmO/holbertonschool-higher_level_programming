@@ -4,7 +4,7 @@ if (argv[2]) {
   if (isNaN(argv[2])) {
     console.log('Not a number');
   } else {
-    console.log('MY number: ' + parseInt(argv[2]));
+    console.log('My number: ' + parseInt(argv[2]));
   }
 } else {
   console.log('Not a number');
